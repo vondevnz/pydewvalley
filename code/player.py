@@ -36,7 +36,7 @@ class Player(pygame.sprite.Sprite):
 		# seeds
 		self.seeds = ['corn', 'tomato']
 		self.seed_index = 0
-		self.seleced_seed = self.seeds[self.seed_index]
+		self.selected_seed = self.seeds[self.seed_index]
 
 	def use_tool(self):
 		pass
@@ -111,7 +111,7 @@ class Player(pygame.sprite.Sprite):
 				self.seed_index += 1
 				if self.seed_index >= len(self.seeds):
 					self.seed_index = 0
-				self.seleced_seed = self.seeds[self.seed_index]
+				self.selected_seed = self.seeds[self.seed_index]
 
 	def get_status(self):
 		# if the player is not moving
