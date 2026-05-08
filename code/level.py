@@ -80,7 +80,6 @@ class Level:
 		self.display_surface.fill('#399cc0')
 		self.all_sprites.custom_draw(self.player)
 		self.all_sprites.update(dt)
-		print(self.player.item_inventory)
 
 		self.overlay.display()
 class CameraGroup(pygame.sprite.Group):
